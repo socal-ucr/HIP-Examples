@@ -227,6 +227,8 @@ public:
 	
 	virtual ~PerfSerializer()
 	{
+		return;
+
 		if(fPtrRead != 0)
 		{
 			fclose(fPtrRead);	

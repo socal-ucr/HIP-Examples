@@ -1,0 +1,13 @@
+## Default
+
+#../bfs ../../../data/bfs/graph1MW_6.txt
+
+##############################################
+## Moe
+##############################################
+
+#../bfs ../../../data/bfs/graph65536.txt &> output.txt
+
+## With rocprof
+
+rocprof -d ./profilerdata -o output.csv --basenames on --timestamp on --stats --hip-trace ../bfs ../../../data/bfs/graph65536.txt &> result/output.txt
